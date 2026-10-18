@@ -1,0 +1,6 @@
+order_id,customer_id,amount,status,email
+1002,C102,-20.0,SHIPPED,bob_at_email.com
+1003,,89.99,PENDING,charlie@test.com
+1004,C104,1200.0,UNKNOWN_STATUS,dana@domain.co
+1005,C105,45.0,DELIVERED,eva@mail.com
+1005,C106,0.0,CANCELLED,frank@corp.com

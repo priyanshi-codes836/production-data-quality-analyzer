@@ -1,0 +1,20 @@
+dataset_name: "production_orders"
+rules:
+  - column: "order_id"
+    type: "unique"
+
+  - column: "customer_id"
+    type: "not_null"
+
+  - column: "amount"
+    type: "range"
+    min: 0.01
+    max: 10000.00
+
+  - column: "status"
+    type: "allowed_values"
+    allowed: ["PENDING", "SHIPPED", "DELIVERED", "CANCELLED"]
+
+  - column: "email"
+    type: "regex"
+    pattern: "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$"
